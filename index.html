@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Checklist</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Study Progress Checklist</h1>
+        <div class="progress-wrapper">
+          <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+          </div>
+          <div id="percentage" class="percentage">0%</div>
+        </div>
+        <div class="summary">
+          <span id="completed-count">0/45 completed</span>
+          <span id="credit-count">0/129 credits</span>
+        </div>
+      </header>
+
+      <main>
+        <section class="level">
+          <h3>Level 1</h3>
+
+          <label class="course"><input type="checkbox" data-id="ISLM101" data-credits="2" /><span class="code">ISLM101</span><span>Human Rights in Islam</span><span class="credits">2 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="ARAB101" data-credits="2" /><span class="code">ARAB101</span><span>Arab Language Skills</span><span class="credits">2 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="PE101" data-credits="2" /><span class="code">PE101</span><span>Health and Fitness</span><span class="credits">2 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="CMP101" data-credits="2" /><span class="code">CMP101</span><span>Intro. to Information Technology</span><span class="credits">2 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="ENGL101" data-credits="3" /><span class="code">ENGL101</span><span>English for Academic Discourse</span><span class="credits">3 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="MGT101" data-credits="3" /><span class="code">MGT101</span><span>Principle of Management and Business</span><span class="credits">3 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="ECON101" data-credits="3" /><span class="code">ECON101</span><span>Principles of Microeconomics</span><span class="credits">3 CR</span></label>
+        </section>
+
+        <section class="level">
+          <h3>Level 2</h3>
+
+          <label class="course"><input type="checkbox" data-id="ARAB102" data-credits="2" /><span class="code">ARAB102</span><span>Arabic Writing</span><span class="credits">2 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="ISLM102" data-credits="2" /><span class="code">ISLM102</span><span>Economic System in Islam</span><span class="credits">2 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="ENGL102" data-credits="3" /><span class="code">ENGL102</span><span>English for Academic Writing</span><span class="credits">3 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="MATH130" data-credits="3" /><span class="code">MATH130</span><span>Finite Mathematics</span><span class="credits">3 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="MGT102" data-credits="3" /><span class="code">MGT102</span><span>Management Information System</span><span class="credits">3 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="ACCT101" data-credits="3" /><span class="code">ACCT101</span><span>Intro to Financial Accounting</span><span class="credits">3 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="ECON102" data-credits="3" /><span class="code">ECON102</span><span>Principles of Macroeconomics</span><span class="credits">3 CR</span></label>
+        </section>
+
+        <section class="level">
+          <h3>Level 3</h3>
+
+          <label class="course"><input type="checkbox" data-id="SKL201" data-credits="2" /><span class="code">SKL201</span><span>Research Methods</span><span class="credits">2 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="ENGL201" data-credits="3" /><span class="code">ENGL201</span><span>English For Academic Communication</span><span class="credits">3 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="MATH131" data-credits="3" /><span class="code">MATH131</span><span>Mathematics for Management</span><span class="credits">3 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="STAT201" data-credits="3" /><span class="code">STAT201</span><span>Business Statistics I</span><span class="credits">3 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="ACCT202" data-credits="3" /><span class="code">ACCT202</span><span>Intro to Managerial Accounting</span><span class="credits">3 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="FREE1" data-credits="3" /><span class="code">XXX</span><span>Free Elective</span><span class="credits">3 CR</span></label>
+        </section>
+
+        <section class="level">
+          <h3>Level 4</h3>
+
+          <label class="course"><input type="checkbox" data-id="STAT202" data-credits="3" /><span class="code">STAT202</span><span>Business Statistics II</span><span class="credits">3 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="MGT205" data-credits="3" /><span class="code">MGT205</span><span>Business Communication</span><span class="credits">3 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="HRM301" data-credits="3" /><span class="code">HRM301</span><span>Human Resources Management</span><span class="credits">3 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="FIN201" data-credits="3" /><span class="code">FIN201</span><span>Principles of Finance</span><span class="credits">3 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="MKT201" data-credits="3" /><span class="code">MKT201</span><span>Principle of Marketing</span><span class="credits">3 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="MGT310" data-credits="3" /><span class="code">MGT310</span><span>Organizational Behavior</span><span class="credits">3 CR</span></label>
+        </section>
+
+        <section class="level">
+          <h3>Level 5</h3>
+
+          <label class="course"><input type="checkbox" data-id="SKL301" data-credits="2" /><span class="code">SKL301</span><span>Leadership and Teamwork</span><span class="credits">2 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="MGT315" data-credits="3" /><span class="code">MGT315</span><span>Legal Environment of Business</span><span class="credits">3 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="MGT320" data-credits="3" /><span class="code">MGT320</span><span>Quantitative Management</span><span class="credits">3 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="SCM302" data-credits="3" /><span class="code">SCM302</span><span>Customer Relationship Management</span><span class="credits">3 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="SCM307" data-credits="3" /><span class="code">SCM307</span><span>Services Management</span><span class="credits">3 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="BUSINESS-ELECTIVE" data-credits="3" /><span class="code">XXX</span><span>Business Elective</span><span class="credits">3 CR</span></label>
+        </section>
+
+        <section class="level">
+          <h3>Level 6</h3>
+
+          <label class="course"><input type="checkbox" data-id="MGT330" data-credits="3" /><span class="code">MGT330</span><span>Operation Management</span><span class="credits">3 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="SCM304" data-credits="3" /><span class="code">SCM304</span><span>Procurement &amp; Supply Management</span><span class="credits">3 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="SCM310" data-credits="3" /><span class="code">SCM310</span><span>Inventory Management</span><span class="credits">3 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="SCM312" data-credits="3" /><span class="code">SCM312</span><span>Transportation Planning and Management</span><span class="credits">3 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="SCM-ELECTIVE-1" data-credits="3" /><span class="code">SCM XXX</span><span>SCM Elective I</span><span class="credits">3 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="MGT425" data-credits="3" /><span class="code">MGT425</span><span>Strategic Management</span><span class="credits">3 CR</span></label>
+        </section>
+
+        <section class="level">
+          <h3>Level 7</h3>
+
+          <label class="course"><input type="checkbox" data-id="SKL401" data-credits="2" /><span class="code">SKL401</span><span>Entrepreneurship</span><span class="credits">2 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="SCM410" data-credits="3" /><span class="code">SCM410</span><span>Global Supply Chain Management</span><span class="credits">3 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="SCM420" data-credits="3" /><span class="code">SCM420</span><span>Distribution &amp; Warehouse Management</span><span class="credits">3 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="SCM425" data-credits="3" /><span class="code">SCM425</span><span>Strategic Issue in SC</span><span class="credits">3 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="SCM450" data-credits="3" /><span class="code">SCM450</span><span>Quality &amp; Process Management</span><span class="credits">3 CR</span></label>
+          <label class="course"><input type="checkbox" data-id="SCM-ELECTIVE-2" data-credits="3" /><span class="code">SCM XXX</span><span>SCM Elective II</span><span class="credits">3 CR</span></label>
+        </section>
+
+        <section class="level">
+          <h3>Level 8</h3>
+
+          <label class="course"><input type="checkbox" data-id="SCM400" data-credits="6" /><span class="code">SCM400</span><span>Cooperative Training Program</span><span class="credits">6 CR</span></label>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
